@@ -14,7 +14,7 @@ public class MenuUIHandler : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        highScoreText.text = "High Score: " + ScoreManager.Instance.playerName + ": " + ScoreManager.Instance.highScore;
+        highScoreText.text = "High Score: " + ScoreManager.Instance.highScorePlayerName + ": " + ScoreManager.Instance.highScore;
     }
 
 

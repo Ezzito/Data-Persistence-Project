@@ -9,7 +9,12 @@ public class DeathZone : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        
         Destroy(other.gameObject);
         Manager.GameOver();
+        //Debug.Log("Name: " + ScoreManager.Instance.playerName);
+        //Debug.Log("Score: " + ScoreManager.Instance.highScore);
+        ScoreManager.Instance.SaveScore();
+
     }
 }
